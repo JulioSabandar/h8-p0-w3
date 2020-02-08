@@ -58,14 +58,14 @@ var param = 'length' //kalian bisa mengisi param ini dengan 'sigma', 'letters', 
 //tulis kode kalian disini
 
 var lets = 'abcdefghijklmnopqrstuvwxyz';
-var numbers = '123456789';
+var numbers = '0123456789';
 var combi = lets + numbers;
 if (param === 'sigma') {
   var count1 = 0;
   for (i=0; i<line.length; i++) {
     for(j=0; j<numbers.length; j++){
       if (line[i] === numbers[j]) {
-        count1++;
+        count1 += parseInt(numbers[j]);
         break;
       }
     }
